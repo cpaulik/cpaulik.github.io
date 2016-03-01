@@ -1,0 +1,28 @@
+#+TITLE:       first test post
+#+AUTHOR:      Christoph Paulik
+#+EMAIL:       cpaulik@gmail.com
+#+DATE:        2016-03-01 Tue
+#+URI:         /blog/%y/%m/%d/first-test-post
+#+TAGS:        tag2, tag3
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: A post about a first test
+
+* This is a headline
+
+With a little text
+
+* Table test
+
+| heading1 | heading2 |
+|----------+----------|
+| hala     |        1 |
+| below    |        2 |
+| cell     | 34.45    |
+
+  #+BEGIN_SRC python -n
+  def blah():
+     print("blah")
+  #+END_SRC
+** math test
+$\alpha$ $e^{2}$
