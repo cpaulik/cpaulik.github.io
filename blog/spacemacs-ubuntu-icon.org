@@ -2,7 +2,7 @@
 #+AUTHOR: Christoph Paulik
 #+EMAIL:       cpaulik@gmail.com
 #+DATE:        2015-03-15 Sun
-#+URI:         /posts/%y/%m/Introduction
+#+URI:         /posts/%y/%m/spacemacs-unity-icon
 #+TAGS:        spacemacs, unity, ubuntu, icon
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
@@ -16,7 +16,7 @@ thought that it would be a good idea to use it as an Icon in Ubuntu Unity.
 #+CAPTION: Spacemacs as an Application in Unity
 #+ATTR_LaTeX: scale=0.75
 #+LABEL: fig:unity_spacemacs
-[[spacemacs-unity.png]]
+[[./spacemacs-unity.png]]
 
 
 If you also want to do this just create the file =~/.local/share/applications/spacemacs.desktop=
