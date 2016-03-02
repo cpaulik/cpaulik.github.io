@@ -1,0 +1,27 @@
+#+TITLE:       Introduction
+#+AUTHOR:      Christoph Paulik
+#+EMAIL:       cpaulik@gmail.com
+#+DATE:        2014-12-10 Wed
+#+URI:         /posts/%y/%m/Introduction
+#+TAGS:        general, introduction
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: The obligatory first post.
+
+Hi, this is the infamous first blog post in which I will promise to
+blog regularly. It is here so that this blog is not
+completely empty.  I really do have plans to fill it with content.
+
+At least setting it up was fun ssjdsjso not all is lost. My first few posts
+will probably explain the setup of the blog which might be interesting
+to fellow [[http://orgmode.org][orgmode]] fans.
+
+Maybe I should also explain the name a little bit.
+
+- Abacus :: A calculating table or frame; an instrument for performing
+            arithmetical calculations by balls sliding on wires.
+- Spendid :: brilliant, excellent, of a very high standard.
+
+Which is a fancy way to say that I like doing stuff with computers and
+this is what this blog will be about most of the time. It was also a
+combination of words that didn't show up on Google a lot.

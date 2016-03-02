@@ -1,0 +1,42 @@
+#+title: Spacemacs Unity Icon
+#+AUTHOR: Christoph Paulik
+#+EMAIL:       cpaulik@gmail.com
+#+DATE:        2015-03-15 Sun
+#+URI:         /posts/%y/%m/Introduction
+#+TAGS:        spacemacs, unity, ubuntu, icon
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Use the Spacemacs icon for starting Emacs.
+
+Recently I really got into using
+[[https://github.com/syl20bnr/spacemacs][Spacemacs]] and I like it a lot. With
+the next release this great Emacs configuration has an official logo. So I
+thought that it would be a good idea to use it as an Icon in Ubuntu Unity.
+
+#+CAPTION: Spacemacs as an Application in Unity
+#+ATTR_LaTeX: scale=0.75
+#+LABEL: fig:unity_spacemacs
+[[spacemacs-unity.png]]
+
+
+If you also want to do this just create the file =~/.local/share/applications/spacemacs.desktop=
+with the following content:
+
+#+begin_src bash
+[Desktop Entry]
+Name=Spacemacs
+GenericName=Text Editor
+Comment=Edit text
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+Exec=emacs %F
+Icon=/home/cp/.emacs.d/core/banners/img/spacemacs.png
+Type=Application
+Terminal=false
+Categories=Development;TextEditor;
+StartupWMClass=Emacs
+#+end_src
+
+Make sure you set the Icon path to your =spacemacs.png= location.
+
+Edit: It was pointed out to me that putting the =.desktop= into
+=~/.local/share/applications= is a cleaner. 
