@@ -39,4 +39,4 @@ StartupWMClass=Emacs
 Make sure you set the Icon path to your =spacemacs.png= location.
 
 Edit: It was pointed out to me that putting the =.desktop= into
-=~/.local/share/applications= is a cleaner. 
+=~/.local/share/applications= is a cleaner solution.
