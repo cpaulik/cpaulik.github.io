@@ -8,7 +8,6 @@
 #+DESCRIPTION: How is the gridding on the EASE grid performed?
 
 
-
 #+begin_src python :results output pp :exports both
 import pyproj
 import math
@@ -29,8 +28,8 @@ print actual_res, x_int
 # and then calculate the necessary size in y direction from that.
 
 # global ease grid 2.0
-ease_global = pyproj.Proj(
-    "+proj=cea +lat 0=0 +lon 0=0 +lat 1=30 +x 0=0 +y 0=0 +ellps=WGS84 +datum=WGS84 +units=m")
+ease_global = pyproj.Proj(("+proj=cea +lat 0=0 +lon 0=0 +lat 1=30 "
+                           "+x 0=0 +y 0=0 +ellps=WGS84 +datum=WGS84 +units=m"))
 
 x_min, y_max = ease_global(-180, 90)
 x_max, y_min = ease_global(180, -90)
@@ -70,11 +69,19 @@ lon2d, lat2d = ease_global(x2d, y2d, inverse=True)
 # and last row of pixels in latitude direction do not fit completely in the
 # projection.
 
-print "Northern border pixel center latitude %3.2f" % ease_global(0, y_arr[0], inverse=True)[1]
-print "Northern border pixel latitude %2.0e" % ease_global(0, y_arr[0] + y_pixel / 2, inverse=True)[1]
+print "Northern border pixel center latitude %3.2f" % (
+    ease_global(0, y_arr[0], inverse=True)[1])
+print "Northern border pixel latitude %2.0e" % (
+    ease_global(0, y_arr[0] + y_pixel / 2, inverse=True)[1])
 
 # This means that these pixels are excluded.
 x2d, y2d = np.meshgrid(x_arr, y_arr[1:-1])
 lon2d_corr, lat2d_corr = ease_global(x2d, y2d, inverse=True)
 print lon2d_corr.shape
 #+end_src
+
+#+RESULTS:
+: 36032.2208406 964
+: Northern border pixel center latitude 87.07
+: Northern border pixel latitude 1e+30
+: (406, 964)
